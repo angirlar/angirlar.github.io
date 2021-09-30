@@ -1,13 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta name="referrer" content="no-referrer" />
-  <meta http-equiv='Referrer-Policy' content='no-referrer-when-downgrade'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
   <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
 </head>
 
 <body>
-  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}" src="https://zalo-filegroup-bf2.zdn.vn/399066b1e58f0ad1539e/8577402946332662304">
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}" style="margin: 10px auto;">
+    <source
+      src="https://www3.sbcdnvideo.com/hls/tysxesxbm266j6cdablrtf2ge6fi6ifiuhi3caapig4yzmur7hprmxozp42a/index-v1-a1.m3u8"
+      type="application/x-mpegURL">
   </video>
+
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.min.js"></script>
 </body>
+
+</html>
